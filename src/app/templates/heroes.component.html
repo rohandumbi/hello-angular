@@ -1,0 +1,9 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<hero-list (notify)="onNotify($event)" [heroes] = "heroes"></hero-list>
+<!--<hero-detail [hero]="selectedHero"></hero-detail>-->
+<div *ngIf="selectedHero">
+  <h2>
+    {{selectedHero.name | uppercase}} is my hero
+  </h2>
+  <button (click)="gotoDetail()">View Details</button>
+</div>
