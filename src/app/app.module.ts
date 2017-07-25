@@ -6,6 +6,7 @@ import { HeroListComponent } from './components/hero-list.component';
 import { HeroesComponent } from './components/heroes.component';
 import { DashboardComponent } from './components/dashboard.component'
 import { AppComponent } from './components/app.component';
+import { HeroSearchComponent } from './components/hero-search.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpModule }    from '@angular/http';
 // Imports for loading & configuring the in-memory web api
@@ -18,7 +19,8 @@ import { InMemoryDataService }  from './in-memory-data.service';
     HeroesComponent,
     DashboardComponent,
     HeroListComponent,
-    HeroDetailComponent
+    HeroDetailComponent,
+    HeroSearchComponent
   ],
   imports: [
     BrowserModule,
